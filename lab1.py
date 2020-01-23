@@ -2,7 +2,7 @@ from datetime import datetime
 expectedformat = '%Y-%m-%d %H:%M:%S'
 
 dt = None
-a = input()
+a = input('Enter date in YYYY-MM-DD HH:MM:SS format: \n')
 try:
     dt = datetime.strptime(a, expectedformat)
 
@@ -10,7 +10,7 @@ except ValueError:
     print('Invalid datetime')
 
 print(dt)
-
+'''
 yeari = None
 try:
     yeari = int(year)
@@ -27,3 +27,4 @@ if year1 is not None:
 
 else:
     print ("Year "+year+" is invalid")
+'''
